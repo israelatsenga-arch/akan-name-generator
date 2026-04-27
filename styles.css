@@ -16,4 +16,12 @@ header a{
     text-decoration: none;
     color:chocolate;
 }
+section{
+    background-color: whitesmoke;
+    border: 2px solid chocolate;
+    border-radius: 4px;
+    padding: 24px;
+    margin :24px auto;
+    transition:box-shadow 0.3s ease;
+}
 
