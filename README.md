@@ -22,8 +22,8 @@ Mark Israel - https://github.com/israelatsenga-arch
     Output:Incorrect enter a valid month
 
 ## Technologies used
-HTML
-CSS
+HTML<br>
+CSS<br>
 Javascript
 
 ## Contact information
