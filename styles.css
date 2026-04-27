@@ -24,4 +24,7 @@ section{
     margin :24px auto;
     transition:box-shadow 0.3s ease;
 }
+section:hover{
+    box-shadow: 0 4px 8px grey
+}
 
