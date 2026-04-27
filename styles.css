@@ -45,4 +45,11 @@ section{
 section:hover{
     box-shadow: 0 4px 8px grey
 }
+h2{
+    font-size: 20px;
+    text-align: center;
+    color: chocolate;
+}
+
+
 
