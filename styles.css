@@ -6,4 +6,8 @@ body {
   margin: 0;
   padding: 0;
 }
-
+header{
+    background-color: whitesmoke;
+    padding:24px 0;
+    color: chocolate;
+}
