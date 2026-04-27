@@ -50,6 +50,13 @@ h2{
     text-align: center;
     color: chocolate;
 }
+form label{
+    display: block;
+}
+form input,form button{
+    border: 2px solid chocolate;
+    border-radius: 4px;
+}
 
 
 
