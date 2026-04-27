@@ -11,6 +11,7 @@ header{
     padding:24px 0;
     color: chocolate;
     text-align: center;
+    font-size: 25px;
 }
 header a{
     text-decoration: none;
@@ -18,10 +19,17 @@ header a{
 }
 nav{
     background-color: chocolate;
+    padding: 5px;
 }
 ul{
     list-style: none;
     display: flex;
+}
+nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0 16px;
+    font-size: 19px;
 }
 
 section{
