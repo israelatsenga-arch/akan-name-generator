@@ -19,6 +19,11 @@ header a{
 nav{
     background-color: chocolate;
 }
+ul{
+    list-style: none;
+    display: flex;
+}
+
 section{
     background-color: whitesmoke;
     border: 2px solid chocolate;
