@@ -13,3 +13,7 @@ const MM = month;
 const DD = dayOfTheWeek;
 let d = Math.floor((CC / 4) - (2 * CC) - 1 + (5 * YY / 4) + (26 * (MM + 1) / 10) + DD) % 7;
 
+if (d < 0) {
+    d = (d + 7) % 7;
+}
+
