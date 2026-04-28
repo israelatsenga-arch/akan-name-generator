@@ -5,16 +5,11 @@ function getAkanName() {
     const year = document.querySelector("#year").value
     const gender =document.querySelector("#gender").value
 }
-// validation of input
-if (dayOfTheWeek === "" || month === "" || year === "" || gender === "") {
-    alert("Please fill in all the data")
-}
-else if (dayOfTheWeek < 1 || dayOfTheWeek > 31) {
-    alert("Please enter a valid date")
-}
-else if (month < 1 || month > 12) {
-    alert("Please enter a valid month")
-}
-else if (year < 1900 || year > 2026) {
-    alert("Please enter a valid year")  
-}
+
+// calculation of the day of the week
+const CC = Math.floor(year / 100);
+const YY = year % 100;
+const MM = month;
+const DD = dayOfTheWeek;
+let d = Math.floor((CC / 4) - (2 * CC) - 1 + (5 * YY / 4) + (26 * (MM + 1) / 10) + DD) % 7;
+
