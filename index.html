@@ -53,19 +53,22 @@
           
           <!-- gender input -->
            <label for="gender">Gender:</label><br>
-           <select id="gender" required>
+           <select id="gender" name = "gender" required>
              <option value="">select</option>
-             <option value="male">Male</option>
+             <option value="Male">Male</option>
              <option value="female">Female</option>
            </select><br><br>
             <!-- submit button -->
              <button id = "button" type="submit">Get My Akan Name</button>
         </form>
-       </section>
-       <section id="result">
+         <!--result  -->
+         <section>
           <h2>Your Akan Name is:</h2>
-        <input type="text" id="result" readonly>
+          <div id="result" class="result hidden"></div>
+         </section>
        </section>
+      
+
        
        
     <script src="./script.js"></script>
