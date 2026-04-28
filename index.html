@@ -40,13 +40,26 @@
        <section id="Get-your-Akan-name">
         <h2>Get your Akan name</h2>
         <form>
-         <!-- birthday input -->
-        <label for="birthday">birthday:</label><br>
-        <input type="date" id="birthday" name="birthday"><br><br>
-        <!-- gender input -->
-         <label for="gender">gender:</label><br>
-         <input type="gender" id="gender" name="gender"><br><br>
-         <button type="submit" id="submit">My Akan Name</button>
+          <!-- date input -->
+          <label for="date">Date of Birth:</label><br>
+          <input type="number" id="date" min="1" max="31" required><br><br>
+          <!-- month input -->
+          <label for="month">Month:</label><br>
+          <input type="number" id="month" min="1" max="12" required><br><br>
+          <!-- year input -->
+          <label for="year">Year:</label><br>
+          <input type="number" id="year" max="2023" required><br><br>
+          
+          <!-- gender input -->
+           <label for="gender">Gender:</label><br>
+           <select id="gender" required>
+             <option value="">select</option>
+             <option value="male">Male</option>
+             <option value="female">Female</option>
+           </select><br><br>
+            <!-- submit button -->
+             <button type="submit">Get My Akan Name</button>
+
         </form>
 
        </section>
