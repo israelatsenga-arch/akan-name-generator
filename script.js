@@ -1,8 +1,8 @@
 function getAkanName() {
     //  retrieve user input
-    const day = parseInt(document.querySelector('#day').value;
-    const month = parseInt(document.querySelector('#month').value;
-    const year = parseInt(document.querySelector('#year').value;
+    const day = parseInt(document.querySelector('#day').value);
+    const month = parseInt(document.querySelector('#month').value);
+    const year = parseInt(document.querySelector('#year').value);
     const gender = document.querySelector('input[name="gender"]:checked');
 
     // extract CC & YY
@@ -11,7 +11,7 @@ function getAkanName() {
     const MM = month;
     const DD = day;
 
-    let d = ((CC / 4 - 2 * CC - 1) + (5 * YY / 4) + (26 * (MM + 1)) / 10) + DD)% 7;
+    let d = ((CC / 4 - 2 * CC - 1) + (5 * YY / 4) + ((26 * (MM + 1)) / 10) + DD) % 7;
     d = Math.floor(d);
 
     if (d < 0) {
