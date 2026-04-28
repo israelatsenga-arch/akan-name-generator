@@ -53,7 +53,7 @@ h2{
 form label{
     display: block;
 }
-form input,form button,form select,form output{
+form input,form button,form select{
     border: 2px solid chocolate;
     border-radius: 4px;
 }
