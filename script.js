@@ -1,35 +1,33 @@
-const button = document.querySelector("button");
-button.addEventListener("click", (event) => {
-    event.preventDefault();
-});
 function getAkanName() {
-    // retrieval of input
-    const dayOfTheWeek = document.querySelector("#date").value
-    const month = document.querySelector("#month").value
-    const year = document.querySelector("#year").value
-    const gender = document.querySelector("#gender").value
+    //  retrieve user input
+    const day = parseInt(document.querySelector('#day').value;
+    const month = parseInt(document.querySelector('#month').value;
+    const year = parseInt(document.querySelector('#year').value;
+    const gender = document.querySelector('input[name="gender"]:checked');
 
-    // calculation of the day of the week
-   const DD = parseInt(document.querySelector("#date").value);
-    const MM = parseInt(document.querySelector("#month").value);
-    const year = parseInt(document.querySelector("#year").value);
-    const gender = document.querySelector("#gender").value;
-    let d = (DD + Math.floor(2.6 * MM - 0.2) - 2 * Math.floor(year / 100) + year + Math.floor(year / 4) + Math.floor(Math.floor(year / 100) / 4)) % 7;
+    // extract CC & YY
+    const CC = Math.floor(year / 100);
+    const YY = year % 100;
+    const MM = month;
+    const DD = day;
+
+    let d = ((CC / 4 - 2 * CC - 1) + (5 * YY / 4) + (26 * (MM + 1)) / 10) + DD)% 7;
+    d = Math.floor(d);
 
     if (d < 0) {
         d = (d + 7) % 7;
     }
-    // Akan names
-    let maleAkanNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-    let femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    // gettin Akan name
+    //  Akan names
+    const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
     let akanName;
-    if (gender.value === "male") {
-        akanName = maleAkanNames[d];
+    if (gender.value === "Male") {
+        akanName = maleNames[d];
     } else {
-        akanName = femaleAkanNames[d]
+        akanName = femaleNames[d];
     }
-    // Akan name output
-    document.getElementById("result").textContent = `Your Akan name is ${akanName}`;
-    document.getElementById("Akan-Name").value = akanName;
+    // Display the Akan name
+    document.querySelector('#result').textContent = `You were born on a ${dayNames[d]}, your Akan name is ${akanName}.`;
 }
