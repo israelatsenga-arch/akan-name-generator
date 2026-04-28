@@ -16,4 +16,14 @@ let d = Math.floor((CC / 4) - (2 * CC) - 1 + (5 * YY / 4) + (26 * (MM + 1) / 10)
 if (d < 0) {
     d = (d + 7) % 7;
 }
+// Akan names
+let maleAkanNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+let femaleAkanNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+// gettin Akan name
+let akanName;
+if (gender.value === "male") {
+    akanName = maleAkanNames[d];
+} else {
+    akanName = femaleAkanNames[d]
+}
 
