@@ -1,3 +1,4 @@
+// event listener after clicking button
 button.addEventListener("click", (event) => {
   // prevent form from refreshing page
   event.preventDefault();
@@ -10,9 +11,9 @@ function getAkanName() {
   const month = parseInt(document.querySelector("#month").value);
   const year = parseInt(document.querySelector("#year").value);
   const gender = document.querySelector('select[name="gender"]');
-//   console.log(gender);
+
   // validation of input
-  if (day === "" || month === "" || year === "" || gender === "") {
+  if (parseInt(day) === "" || parseInt(month) === "" || parseInt(year) === "" || gender.value === "") {
     alert("Please fill in all the data");
     return;
   } else if (day < 1 || day > 31) {
@@ -67,6 +68,7 @@ function getAkanName() {
     "Saturday",
   ];
 
+  // checking the result of d and matching it with the correct akan name
   let akanName;
   if (gender.value === "Male") {
     akanName = maleNames[d];
