@@ -15,11 +15,11 @@ Mark Israel - https://github.com/israelatsenga-arch
 
 ## BDD(Behavior-Driven Development)
 1. Input:Birthdate and gender<br>
-    Output:An Akan name based on your birthdate and gender
+    * Output:An Akan name based on your birthdate and gender
 2. Input:Invalid date(day<=0 or day >31)<br>
-    Output:Incorrect enter a valid date
+    * Output:Incorrect enter a valid date
 3. Input:Invalid month(month<=0 or month >12)<br>
-    Output:Incorrect enter a valid month
+    * Output:Incorrect enter a valid month
 
 ## Technologies used
 HTML<br>

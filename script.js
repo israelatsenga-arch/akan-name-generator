@@ -9,8 +9,22 @@ function getAkanName() {
   const day = parseInt(document.querySelector("#date").value);
   const month = parseInt(document.querySelector("#month").value);
   const year = parseInt(document.querySelector("#year").value);
-    const gender = document.querySelector('select[name="gender"]');
-    console.log(gender)
+  const gender = document.querySelector('select[name="gender"]');
+//   console.log(gender);
+  // validation of input
+  if (day === "" || month === "" || year === "" || gender === "") {
+    alert("Please fill in all the data");
+    return;
+  } else if (day < 1 || day > 31) {
+    alert("Please enter a valid date between 1 and 31");
+    return;
+  } else if (month < 1 || month > 12) {
+    alert("Please enter a valid month between 1 and 12");
+    return;
+  } else if (year < 1900 || year > 2026) {
+    alert("Please enter a valid year between 1900 and 2026");
+    return;
+  }
 
   // extract CC & YY
   const CC = Math.floor(year / 100);
@@ -60,9 +74,6 @@ function getAkanName() {
     akanName = femaleNames[d];
   }
   // Display the Akan name
-  const resultBox = document.getElementById("result");
-  resultBox.innerHTML =
-    "your Akan name is: " + akanName + " and you were born on a " + dayNames[d];
-  resultBox.classList.remove("hidden");
-  resultBox.scrollIntoView({ behavior: "smooth" });
+  const resultBox = document.querySelector("#result");
+  resultBox.textContent = "You were born on a: " + dayNames[d] + " and your Akan name is: " + akanName;
 }
