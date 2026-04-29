@@ -41,6 +41,7 @@ section{
     padding: 24px;
     margin :24px auto;
     transition:box-shadow 0.3s ease;
+    line-height: 1.6;
 }
 section:hover{
     box-shadow: 0 4px 8px grey
