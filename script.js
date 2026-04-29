@@ -10,7 +10,7 @@ function getAkanName() {
   const day = parseInt(document.querySelector("#date").value);
   const month = parseInt(document.querySelector("#month").value);
   const year = parseInt(document.querySelector("#year").value);
-  const gender = document.querySelector('select[name="gender"]');
+   const gender = document.querySelector('select[name="gender"]');
 
   // validation of input
   if (parseInt(day) === "" || parseInt(month) === "" || parseInt(year) === "" || gender.value === "") {
