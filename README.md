@@ -27,7 +27,7 @@ CSS<br>
 Javascript
 
 ## Contact information
-israelatsenga@gmail.com
+mark.isarel@student.moringaschool.com
 
 ## License and Copyright Information
 This project is licensed under the MIT license.<br>

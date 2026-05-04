@@ -13,7 +13,7 @@ function getAkanName() {
    const gender = document.querySelector('select[name="gender"]');
 
   // validation of input
-  if (parseInt(day) === "" || parseInt(month) === "" || parseInt(year) === "" || gender.value === "") {
+  if (!day || parseInt(month) === "" || parseInt(year) === "" || gender.value === "") {
     alert("Please fill in all the data");
     return;
   } else if (day < 1 || day > 31) {
